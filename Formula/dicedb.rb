@@ -10,8 +10,7 @@ class Dicedb < Formula
   def install
     ENV["GOPROXY"] = "direct"
     ENV["GOSUMDB"] = "off"
-    system "make", "build"
-    bin.install "dicedb"
+    system "go", "build", "-o", bin/"dicedb"
   end
 
   def caveats
