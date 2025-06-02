@@ -15,7 +15,7 @@ class Dicedb < Formula
     system "go", "build", "-o", bin/"dicedb"
 
     # Ensure VERSION file is co-located with the binary
-    cp "VERSION", bin/"VERSION"
+    pkgshare.install "VERSION"
   end
 
   def caveats
