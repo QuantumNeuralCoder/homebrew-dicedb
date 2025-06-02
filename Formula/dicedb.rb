@@ -1,4 +1,4 @@
-class DiceDB < Formula
+class Dicedb < Formula
   desc "DiceDB engine – fast, reactive, in-memory database"
   homepage "https://github.com/DiceDB/dice"
   url "https://github.com/DiceDB/dice/archive/refs/tags/v1.0.0.tar.gz"
