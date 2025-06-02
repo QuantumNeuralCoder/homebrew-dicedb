@@ -28,9 +28,9 @@ class Dicedb < Formula
 
       The server listens on port 7379 by default.
 
-      NOTE: If you see an error about a missing VERSION file,
+      NOTE: If you see an error about a missing VERSION file, (after https://github.com/DiceDB/dice/pull/1770 is merged)
       set DICEDB_VERSION_PATH:
-        export DICEDB_VERSION_PATH=#{opt_pkgshare}/VERSION
+      export DICEDB_VERSION_PATH=#{opt_pkgshare}/VERSION
 
       For more info, visit: https://github.com/DiceDB/dice
     EOS
