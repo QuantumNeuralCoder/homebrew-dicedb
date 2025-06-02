@@ -8,6 +8,8 @@ class Dicedb < Formula
   depends_on "go" => :build
 
   def install
+    ENV["GOPROXY"] = "direct"
+    ENV["GOSUMDB"] = "off"
     system "make", "build"
     bin.install "dicedb"
   end
