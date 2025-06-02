@@ -12,7 +12,7 @@ class Dicedb < Formula
     ENV["GOSUMDB"] = "off"
 
     # Patch: create missing VERSION file in the root, as expected by build
-    (version_file = buildpath/"VERSION").write("v1.0.0") unless version_file.exist?
+    (version_path = buildpath/"VERSION").write("v1.0.0") unless (buildpath/"VERSION").exist?
 
     system "go", "build", "-o", bin/"dicedb", "./cmd/dicedb"
   end
