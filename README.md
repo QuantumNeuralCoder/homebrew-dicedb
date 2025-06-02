@@ -7,7 +7,7 @@ This tap provides Homebrew installation for the [DiceDB](https://github.com/Dice
 | Formula       | Description                       | Command                      |
 |---------------|-----------------------------------|------------------------------|
 | `dicedb-cli`  | DiceDB command-line interface     | `brew install dicedb-cli`    |
-| `dice`        | DiceDB in-memory database engine  | `brew install dice`          |
+| `dicedb`        | DiceDB in-memory database engine  | `brew install dicedb`          |
 
 ## 🛠️ Installation
 
@@ -18,7 +18,7 @@ brew tap QuantumNeuralCoder/dicedb
 brew install dicedb-cli
 
 # Install the server engine (optional)
-brew install dice
+brew install dicedb
 ```
 
 ## 🚀 Usage
