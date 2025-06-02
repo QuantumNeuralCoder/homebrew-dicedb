@@ -26,6 +26,7 @@ brew install dicedb
 ### Start DiceDB engine:
 
 ```bash
+ln -s /opt/homebrew/share/dicedb/VERSION ./VERSION
 dicedb
 ```
 
