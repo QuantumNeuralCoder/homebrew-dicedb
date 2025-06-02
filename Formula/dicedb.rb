@@ -7,18 +7,15 @@ class Dicedb < Formula
 
   depends_on "go" => :build
 
-def install
-  ENV["GOPROXY"] = "direct"
-  ENV["GOSUMDB"] = "off"
+  def install
+    ENV["GOPROXY"] = "direct"
+    ENV["GOSUMDB"] = "off"
 
-  # Patch: create missing VERSION file in the build context
-  version_path = buildpath/"cmd/dicedb/VERSION"
-  version_path.write("v1.0.0")
+    # Patch: create missing VERSION file in the root, as expected by build
+    (buildpath/"VERSION").write("v1.0.0")
 
-  cd "cmd/dicedb" do
-    system "go", "build", "-o", bin/"dicedb"
+    system "go", "build", "-o", bin/"dicedb", "./cmd/dicedb"
   end
-end
 
   def caveats
     <<~EOS
