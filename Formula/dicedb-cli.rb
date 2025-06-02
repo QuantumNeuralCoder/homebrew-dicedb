@@ -1,4 +1,4 @@
-class Dicedb < Formula
+class DicedbCli < Formula
   desc "Command-line interface for DiceDB, a fast in-memory database"
   homepage "https://github.com/DiceDB/dicedb-cli"
   url "https://github.com/DiceDB/dicedb-cli/archive/refs/tags/v1.0.8.tar.gz"
