@@ -2,7 +2,7 @@ class Dice < Formula
   desc "DiceDB engine – fast, reactive, in-memory database"
   homepage "https://github.com/DiceDB/dice"
   url "https://github.com/DiceDB/dice/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256"
+  sha256 "1c613e44c8136d67dec73e92e084d38f39710d286fd1880998960891eb798a02"
   license "BSD-3-Clause"
 
   depends_on "go" => :build
